@@ -1,4 +1,4 @@
-import { getScreenshot } from "./_lib/puppeteer";
+import { getScreenshot } from "./_lib/playwright";
 
 module.exports = async (req, res) => {
   if (!req.query.url) return res.status(400).send("No url query specified.");
